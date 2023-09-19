@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Header  */
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+  background-color: aqua;
+}
+header ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+
+/* Form Style Start */
+.contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+form {
+  width: 500px;
+  border: 1px solid grey;
+  background-color: #5758bb;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.input input {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: #b2bec3;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.btn {
+  width: 100%;
+  margin-top: 50px;
+}
+.btn button {
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: linear-gradient(
+    to right,
+    #41295a 0%,
+    #2f0743 51%,
+    #41295a 100%
+  );
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+.btn button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.msg{
+    text-align: center;
+    color: #009432;
+}
+
+
+@media screen and (max-width: 512px) {
+  form {
+    width: 90vw;
+  }
+  .input {
+    width: 90%;
+  }
+}
+
+/* Form Style End */
