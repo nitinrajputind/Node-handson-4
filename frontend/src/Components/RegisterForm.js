@@ -22,7 +22,7 @@ const RegisterFrom = () => {
     const handleSubmit = (e) =>{
         if(formData.password === formData.confirmPassword) {
             e.preventDefault();
-            axios.post("http://localhost:4000/api/register",formData)
+            axios.post("https://node-handson-4-hnf5.onrender.com/api/register",formData)
             .then((response)=>{
                 const token =response.data.token;
                 localStorage.setItem("token", token);

@@ -7,7 +7,7 @@ const DashBoard = () => {
   useEffect(()=>{
     const token = localStorage.getItem("token");
 
-    axios.get("http://localhost:4000/api/dashBoard",{
+    axios.get("https://node-handson-4-hnf5.onrender.com/api/dashBoard",{
       headers : {
         uthorization: `Bearer ${token}`
       }
